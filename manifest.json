@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+
+    "name": "CryptopiaBalanceConverter",
+    "description": "Extension to Crytopia's balances page to show estimated totals in NZD.",
+    "version": "1.0",
+
+    "content_scripts": [{
+        "matches": ["https://www.cryptopia.co.nz/Balances/*"],
+        "js": ["jquery-3.2.1.min.js", "balance.js"]
+    }]
+}
